@@ -1,0 +1,7 @@
+{
+  "name": "Grean",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
