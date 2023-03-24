@@ -1,25 +1,28 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
-import './Tab2.css';
+import './Home.css';
+import greanLogo from '../assets/grean-logo.png';
 
-const Tab2: React.FC = () => {
+const Home: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 2</IonTitle>
+        <IonToolbar color="secondary">
+          <IonTitle color="primary" size="large">
+            <img width="100px" src={greanLogo} alt="Grean Logo"></img>
+          </IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 2</IonTitle>
+            <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 2 page" />
+        <ExploreContainer name="Home page" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab2;
+export default Home;

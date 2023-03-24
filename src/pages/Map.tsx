@@ -1,26 +1,25 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
-import Navbar from '../components/Navbar';
-import './Tab3.css';
+import {Navbar, MapBox} from '../components';
+import './Map.css';
 
-const Tab3: React.FC = () => {
+const Map: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <Navbar />
+          <Navbar/>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Services</IonTitle>
+            <IonTitle size="large">Map</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Services page" />
+        <MapBox/>
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab3;
+export default Map;
