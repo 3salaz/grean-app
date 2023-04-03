@@ -32,6 +32,7 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import './theme/tailwind.css';
+import MenuToggle from "./components/MenuToggle";
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -43,7 +44,7 @@ const App: React.FC = () => (
           <Route path="/" component={Home} exact></Route>
           <Route path="/settings" component={Settings}></Route>
         </IonRouterOutlet>
-
+        <MenuToggle/>
         <IonTabBar slot="bottom">
           <IonTabButton tab="Map" href="/map">
             <IonIcon icon={triangle} />
